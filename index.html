@@ -5,22 +5,121 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>travelpage</title>
   </head>
   <body>
+    <div id="logo">
+      GlobalTrade
+      <i class="fas fa-plane-departure"></i>
+    </div>
     <nav>
-      <div id="#logo">GlobalTrade</div>
       <div class="navbar">
         <ul>
           <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#about">About</a></li>
         </ul>
       </div>
     </nav>
 
     <div class="bgImage">
-      <img src="image01.jpeg" alt="image01" />
+      <div class="text">
+        <div class="header-text">
+          <h1>Welcome to our homepage</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem vel
+            totam ab numquam iusto. Sunt error quisquam expedita eaque aliquam,
+            suscipit amet dignissimos magnam pariatur tenetur similique
+            eligendi, quas odit?
+          </p>
+        </div>
+        <button class="button">READ MORE</button>
+      </div>
     </div>
+    <section class="middle-section">
+      <div class="row">
+        <div class="left-container">
+          <h1>About Us</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            laboriosam necessitatibus saepe animi esse optio libero, eaque
+            ratione modi commodi! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Debitis laboriosam necessitatibus saepe animi esse
+            optio libero, eaque ratione modi commodi! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Debitis laboriosam necessitatibus
+            saepe animi esse optio libero, eaque ratione modi commodi! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            laboriosam necessitatibus saepe animi esse optio libero, eaque
+            ratione modi commodi! <br />
+            <br />
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Aspernatur, possimus? Nesciunt blanditiis ipsum error asperiores
+            quasi perspiciatis nihil, quia voluptatibus laboriosam dicta veniam
+            consectetur corrupti et quas voluptatem, sequi laborum.
+          </p>
+        </div>
+        <div class="right-container">
+          <!-- <img src="image01.jpeg" alt="image01" /> -->
+        </div>
+      </div>
+    </section>
+    <section class="footer-section">
+      <div class="footer-row">
+        <div class="contact-form">
+          <form class="contact-column">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:70px"
+            ></textarea>
+            <input type="submit" value="Submit" />
+          </form>
+        </div>
+        <div class="right-footer">
+          <h5>Lorem ipsum dolor sit</h5>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+            veniam a fugit, quod at atque distinctio optio facilis perferendis
+            laudantium. <br />
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            laboriosam necessitatibus saepe animi esse optio libero, eaque
+            ratione modi commodi! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Debitis laboriosam necessitatibus saepe animi esse
+            optio libero, eaque ratione modi commodi! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Debitis laboriosam necessitatibus
+            saepe animi esse optio libero, eaque ratione modi commodi! Lorem
+            ipsum dolor sit amet consectetur adipisicing elit. Debitis
+            laboriosam necessitatibus saepe animi esse optio libero, eaque
+            ratione modi commodi!
+          </p>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
