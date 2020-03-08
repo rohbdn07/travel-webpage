@@ -10,6 +10,10 @@
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script
       src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -20,11 +24,11 @@
       integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
       crossorigin="anonymous"
     ></script>
-    <script
+    <!-- <script
       src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
-    ></script>
+    ></script> -->
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -33,21 +37,24 @@
     <title>travelpage</title>
   </head>
   <body>
-    <div id="logo">
-      GlobalTrade
-      <i class="fas fa-plane-departure"></i>
-    </div>
-    <nav>
-      <div class="navbar">
-        <ul>
-          <li><a class="active" href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+    <section class="bg-top">
+      <div id="logo">
+        <h4 class="italic">Global</h4>
+        <i class="fas fa-plane-departure"></i>
+        <span> Travel</span>
       </div>
-    </nav>
+      <nav>
+        <div class="navbar">
+          <ul>
+            <li><a class="active" href="#bgImage">Home</a></li>
+            <li><a href="#middle-section">AboutUs</a></li>
+            <li><a href="#footer-section">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section>
 
-    <div class="bgImage">
+    <div class="bgImage" id="bgImage">
       <div class="text">
         <div class="header-text">
           <h1>Welcome to our homepage</h1>
@@ -58,10 +65,10 @@
             eligendi, quas odit?
           </p>
         </div>
-        <button class="button">READ MORE</button>
+        <button class="button-top">READ MORE</button>
       </div>
     </div>
-    <section class="middle-section">
+    <section class="middle-section" id="middle-section">
       <div class="row">
         <div class="left-container">
           <h1>About Us</h1>
@@ -84,13 +91,17 @@
           </p>
         </div>
         <div class="right-container">
-          <!-- <img src="image01.jpeg" alt="image01" /> -->
+          <h4 class="italic mT text-on-hover">
+            Travel with Us <br />
+            Excellent with the cheapest price.
+          </h4>
         </div>
       </div>
     </section>
-    <section class="footer-section">
+    <section class="footer-section" id="footer-section">
       <div class="footer-row">
-        <div class="contact-form">
+        <!-- <div class="contact-form">
+          <strong>Contact:</strong>
           <form class="contact-column">
             <label for="fname">First Name</label>
             <input
@@ -119,25 +130,65 @@
               placeholder="Write something.."
               style="height:70px"
             ></textarea>
-            <input type="submit" value="Submit" />
+            <hr />
+            <input class="button" type="submit" value="Submit" />
+          </form>
+        </div> -->
+        <div class="contact-form">
+          <strong>Contact:</strong>
+          <form class="contact-column">
+            <label for="fname">First Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <label for="lname">Last Name</label>
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="Finland">Finland</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea
+              id="subject"
+              name="subject"
+              placeholder="Write something.."
+              style="height:70px"
+            ></textarea>
+            <hr />
+            <input class="button" type="submit" value="Submit" />
           </form>
         </div>
         <div class="right-footer">
-          <h5>Lorem ipsum dolor sit</h5>
-          <p>
+          <h5
+            class="italic"
+            style="color: rgba(0, 0, 0, 0.904); font-weight: bold;"
+          >
+            OFFER/SALES
+          </h5>
+          <p class="italic">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
             veniam a fugit, quod at atque distinctio optio facilis perferendis
             laudantium. <br />
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
             laboriosam necessitatibus saepe animi esse optio libero, eaque
             ratione modi commodi! Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. <br />
+            Debitis laboriosam necessitatibus saepe animi esse optio libero,
+            eaque ratione modi commodi! Lorem ipsum dolor sit amet consectetur
             adipisicing elit. Debitis laboriosam necessitatibus saepe animi esse
             optio libero, eaque ratione modi commodi! Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Debitis laboriosam necessitatibus
-            saepe animi esse optio libero, eaque ratione modi commodi! Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Debitis
-            laboriosam necessitatibus saepe animi esse optio libero, eaque
-            ratione modi commodi!
+            saepe animi esse optio libero, eaque ratione modi commodi!
           </p>
         </div>
       </div>
