@@ -27,13 +27,13 @@ li a {
 }
 
 .img-disp {
-  position: relative;
+  position: absolute;
   width: 100%;
 
   font-family: "Roboto", sans-serif;
 }
 .bg {
-  position: relative;
+  position: absolute;
 }
 div.main_service {
   margin-left: 7%;
