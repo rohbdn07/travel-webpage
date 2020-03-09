@@ -2,89 +2,194 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-/* header {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-} */
-
-ul {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  border: 1px solid red;
-}
-li a {
-  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
-.bg {
-  height: 50vh;
-  background: url("image01.jpeg") no-repeat center center/cover;
-  width: 100%;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-.img-disp {
-  position: absolute;
-  width: 100%;
-
-  font-family: "Roboto", sans-serif;
-}
-.bg {
-  position: absolute;
-}
-div.main_service {
-  margin-left: 7%;
-  background-color: rgba(14, 9, 1, 0.938);
-  padding: 2em;
-  width: 25em;
-  /* border: 1px solid rgb(221, 221, 56, 0.2); */
-  border-radius: 10px;
-  margin-top: 18rem;
-  position: absolute;
-  box-shadow: 10px 10px rgb(230, 121, 121, 0.5);
-}
-.main_service h2 {
-  color: rgb(224, 71, 71);
-  font-size: 35px;
-  font-family: "Parisienne", cursive;
-  /* border: 1px solid red; */
-  padding: 3px;
-}
-.main_service p {
-  color: rgba(204, 197, 195, 0.76);
-  font-size: 13px;
-  word-spacing: 1px;
-  padding: 20px;
-}
-.main_service:hover {
-  /* background-color: rgb(226, 184, 68, 0.7); */
-  background-color: rgba(14, 14, 12, 0.938);
-  zoom: 1.05;
-}
-
-.container_two {
-  background-color: rgb(14, 11, 11);
-  height: 35vh;
-}
-.container_two h2,
-.container_three h3 {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+/* -----------------------------nav-bar -start--------------- */
+.bg-top {
   position: relative;
-  padding-top: 150px;
-  font-size: 45px;
-  color: rgb(237, 221, 221);
-  font-family: "Molle", cursive;
+  background-color: rgb(24, 24, 26);
+
+  height: 150px;
+  margin: 0 auto;
+
+  overflow: hidden;
+  /* z-index: 1; */
 }
-.container_three {
-  background-color: rgb(220, 78, 78);
-  height: 50vh;
+#logo {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 20px;
+  z-index: 1000;
+  color: white;
 }
-.container_three h3 {
-  font-family: "Roboto", sans-serif;
-  font-size: 40px;
+#logo span {
+  color: red;
+  font-style: italic;
+  font-size: 30px;
+}
+.italic {
+  font-style: italic;
+}
+.navbar {
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  word-spacing: 45px;
+}
+
+.navbar ul li {
+  display: inline;
+  justify-items: center;
+  padding: 10px;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li a:hover {
+  border-bottom: 2px solid black;
+  transition: 2s ease-in;
+}
+
+/* -----------------------------nav-bar -ends--------------- */
+
+/* -----------------------Main-bg-image starts---------- */
+.bgImage {
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-1.2.1&auto=format&fit=crop&w=967&q=80");
+  height: 60vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 5px 5px 10px black;
+}
+
+.bgImage .text {
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.904);
+  margin: 0 auto;
+  padding: 30px;
+  border: 5px solid black;
+  border-radius: 10px;
+  top: 240px;
+  left: 50px;
+}
+.text .button-top {
+  position: absolute;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(40, 98, 221, 0.815);
+}
+/* -----------------------Main-bg-image ends---------- */
+
+/* ------------------------About Us-section-starts------------------ */
+.middle-section {
+  background-color: rgba(189, 30, 62, 0.719);
+}
+.row {
+  display: flex;
+  justify-content: space-around;
+  height: 70vh;
+  margin: 0 100px 0 40px;
+  padding: 80px;
+  background-color: teal;
+  color: white;
+}
+
+.middle-section .left-container {
+  width: 500px;
+  height: 300px;
+  padding: 10px;
+}
+
+.right-container {
+  background-image: url("https://images.unsplash.com/photo-1530521954074-e64f6810b32d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80");
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 600px;
+  max-height: 450px;
+  box-shadow: 5px 5px 10px black;
+}
+
+.text-on-hover {
+  color: rgb(8, 8, 8);
+  text-align: center;
+  z-index: 100;
+  font-weight: bold;
+}
+.mT {
+  margin-top: 180px;
+}
+/* ------------------------middle-section-ends------------------ */
+
+/* Style inputs */
+.footer-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  background-color: black;
+  color: white;
+  padding: 60px;
+}
+
+input[type="text"],
+select,
+textarea {
+  display: block;
+  width: 250px;
+  padding: 3px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: #f0e3e377;
+}
+
+.right-footer {
+  padding: 20px;
+  width: 400px;
+  height: auto;
+
+  border-top-right-radius: 15%;
+  border-bottom-left-radius: 15%;
+  border-top-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background-color: rgba(64, 224, 208, 0.507);
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
